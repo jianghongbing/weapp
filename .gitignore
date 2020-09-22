@@ -102,3 +102,9 @@ dist
 
 # TernJS port file
 .tern-port
+
+
+# igonore miniprogram_npm文件夹
+
+/miniprogram_npm
+
