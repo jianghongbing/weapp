@@ -1,14 +1,43 @@
 {
-  "pages":[
+  "entryPagePath": "pages/home/home",
+  "pages": [
     "pages/index/index",
-    "pages/logs/logs"
+    "pages/home/home",
+    "pages/me/me"
   ],
-  "window":{
-    "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "Weixin",
-    "navigationBarTextStyle":"black"
+  "window": {
+    "navigationBarBackgroundColor": "#2fd158",
+    "navigationBarTitleText": "hello, world",
+    "navigationBarTextStyle": "white",
+    "backgroundColor": "#ff0000",
+    "backgroundTextStyle": "dark",
+    "backgroundColorTop": "#00ff00",
+    "backgroundColorBottom": "#0000ff",
+    "enablePullDownRefresh": true,
+    "onReachBottomDistance": 50,
+    "pageOrientation": "portrait"
+  },
+  "tabBar": {
+    "color": "#ff0000",
+    "selectedColor": "#00ff00",
+    "backgroundColor": "#fff",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "images/home.png",
+        "selectedIconPath": "images/home_selected.png",
+        "text": "Home"
+      },
+      {
+        "pagePath": "pages/me/me",
+        "text": "Me"
+      }
+    ],
+    "position": "bottom",
+    "custom": false
   },
   "style": "v2",
-  "sitemapLocation": "sitemap.json"
+  "sitemapLocation": "sitemap.json",
+  "debug": true
 }

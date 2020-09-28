@@ -9,6 +9,13 @@ App({
     // 登录
     wx.login({
       success: res => {
+        wx.showToast({
+          title: '登录成功',
+        })
+        // console.log(res);
+        // wx.({
+        //   title: JSON.stringify(res),
+        // });
         // 发送 res.code 到后台换取 openId, sessionKey, unionId
       }
     })
